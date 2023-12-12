@@ -1,0 +1,5 @@
+section{width: 1920px; height: 1080px; color: white; position: relative;}
+#mainSlogun{font-size: 80px; font-weight: 400;position: absolute; top: 290px; left: 355px;}
+#bold{font-weight: 700;}
+#name{font-size: 80px; font-weight: 400;position: absolute; top: 485px; left: 736.5px;}
+#contact{font-size: 40px;font-weight: 400;position: absolute; top: 680px; left: 730.5px; line-height: 80px;}

@@ -1,0 +1,12 @@
+body { overflow-x: hidden; } 
+.Thumbnail { width: 1920px; height: 710px; display: flex; justify-content: center; align-items: flex-end; } 
+.Thumbnail img { width: 920px; height: 470px; } 
+.Frame { width: 920px; height: 450px; border-radius: 110px; border: 10px solid #FFF;  position: relative; display: flex; overflow: hidden;} 
+.Frame img { width: 920px; height: 470px; flex-shrink: 0; transition: transform 0.5s ease-in-out; } 
+.Frame .ImageContainer { position: relative; display: flex; } 
+.Frame .ImageContainer img { flex-shrink: 0; } 
+.TextBox {width: 1920px;height: 220px; position: relative;} 
+.Main{width: 1920px;height: 220px;align-items: center; display: flex; justify-content: center; font-size: 80px; font-weight: 700; z-index: 2; position: absolute;} 
+.Buttons { width: 1330px; height: 75px; display: flex; justify-content: space-between; position: absolute; top: 440px; left: 295px; } 
+#LeftButton { background-color: #ffffff00; border: none; z-index: 3; cursor: pointer;} 
+#RightButton { background-color: #ffffff00; border: none; z-index: 3; cursor: pointer;} 
