@@ -19,7 +19,11 @@ $(document).ready(function(){
             currentIndex--;
         }
         $('#Slider').css('transform', 'translateX(' + (-currentIndex * 1080) + 'px)');
-        $('#RightButton').show();
+        if(currentIndex == 0) {
+            $('#LeftButton').hide();
+        } else {
+            $('#RightButton').show();
+        }
     });
 
 
