@@ -1,4 +1,4 @@
-p { color: white; } 
+/* p { color: white; } 
 .Thumbnail {width: 1920px; height: 1080px; position: relative; } 
 .Thumbnail video{width: 1920px; height: 1080px; position: absolute; }
 .TextBox { width: 1920px; height: 1080px; position: absolute; background-color: rgba(0, 0, 0, 0.75);} 
@@ -41,7 +41,7 @@ video { width: 1280px; height: 720px; }
 .Review { width: 1920px; height: 1080px; display: flex; justify-content: center; align-items: flex-start; position: relative; color: white;} 
 .Review h3{  position: absolute; }
 
-#PlayScreen {width: 1080px; height: 720px; border-radius: 120px; border: 40px solid #FFF; position: absolute; overflow: hidden; top: 150px;} 
+#PlayScreen {width: 1080px; height: 720px; border-radius: 120px; border: 5px solid #FFF; position: absolute; overflow: hidden; top: 150px;} 
 #Slider { display: flex; transition: transform 0.5s ease-in-out; }
 #PlayScreen img { width: 1080px; }
 .Buttons { width: 1620px; height: 850px; display: flex; justify-content: space-between; }
@@ -56,6 +56,83 @@ video { width: 1280px; height: 720px; }
 .descriptiontext{width: 1920px;position: absolute; font-size: 80px;z-index: 3; text-align: center; top: 480px;font-weight: 700;opacity: 100%;}
 #Choice{width: 1280px; height: 266px; position: absolute;z-index: 3; display: flex; bottom: 100px; left: 330px; }
 #Choice img{width: 410px; border: white 5px solid; cursor: pointer;}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-700px * 6));  }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slide-up {
+    animation: slide-up 2s forwards;
+}
+
+
+#Logo, p{
+    opacity: 0;
+}
+.ObjectTap p,header p {opacity: 100%;} */
+
+
+p { color: white; } 
+.Thumbnail {width: 100%; height: 100vh; position: relative; } 
+.Thumbnail video{width: 100%; height: 100vh; position: absolute; }
+.TextBox {width: 100%; height: 100vh; position: absolute; background-color: rgba(0, 0, 0, 0.75);} 
+#Logo { position: absolute; top: 24%; left: 19%; } 
+#LogoText {width: 36.45%;font-size: 7.5em; font-weight: 700; position: absolute; top: 35%; left: 47%; } 
+#LogoSubText { width: 38.5%; height: 25.9%; text-align: center; font-size: 1em; position: absolute; top:69.4%; left:30.7%; line-height: 2.25em;} 
+#View{width: 10.4%;top: 50%; left:63.5%;font-size: 2.5em;position: absolute; }
+.bold { font-weight: 700; } 
+
+.ObjectTap { width: 100%; height: 69%; position: relative; top: 16.66%; } 
+.Object { display: flex; justify-content: center; } 
+.Object img { width: 98%; height: 100%; padding: 0 0.7% 0 0.7%;} 
+
+.Object > div { position: relative; display: inline-block; } 
+.Object > div .hoverBox { position: absolute; top: 0; left: 0; width: 98%; height: 100%; padding: 0 0.7% 0 0.7%; background: rgba(0,0,0,0.5); color: white; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.5s;  } 
+.Object > div:hover .hoverBox { opacity: 1; } 
+.Object > div:hover img { filter: blur(3px); } 
+img { transition: filter 0.5s; } 
+
+#Objecttext { width: 44.8%; height: 44.44px; font-weight: 700; z-index: 3; display:flex; justify-content: center; align-items: center; position: absolute; color: black;} 
+
+#Objecttext:hover { opacity: 0; } 
+#Hsub { font-size: 1.5em; position: absolute; top: 50%; font-weight: 700;} 
+
+.warming { position: relative; width: 100%; height: 100vh; background-image: url(../Img/Cook/image\ 114.png); background-size: cover; } 
+#imgblur{width: 100%; height: 100vh; background-color:rgba(0, 0, 0, 0.8);position: absolute;}
+#warming { width: 100%; height: 23.1%; font-size: 3.5em; line-height: 2.25em; display: flex; justify-content: center;position: absolute; font-weight: 700; top: 26%;} 
+.warmingsub {width: 100%; font-size: 1.25em; text-align: center; top: 37%; ;padding-top: 4.5%;position: absolute; line-height: 2.25em; font-weight: 400;} 
+.warmingsub p {padding-top: 2.5%;}
+#red{color: red;}
+
+
+.Video { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; padding-bottom: 10%; } 
+video { width: 73%; height: 97.2%; } 
+
+.Review { width: 100%; height: 100%; display: flex; justify-content: center; align-items: flex-start; position: relative; color: white;} 
+.Review h3{  position: absolute;}
+
+
+#description{position: relative; height: 118%; color: white;}
+#description h3{width: 100%; height: 13.8%; text-align: center; font-size: 3em;}
+#imgblur2{width: 100%;height: 82%; background-color:rgba(0, 0, 0, 0.6);position: absolute; z-index: 1;}
+#Screen img{width: 66.66%;position: absolute; left: 16.66%}
+
+
+.descriptiontext{width: 100%;position: absolute; font-size: 3em;z-index: 3; text-align: center; top: 44.44%;font-weight: 700;opacity: 100%;}
+#Choice{width: 66%; height: 21%; position: absolute;z-index: 3; display: flex; bottom: 9.2%; left: 17.18%; }
+#Choice img{width:32.5%; border: white 5px solid; cursor: pointer;}
+
 
 @keyframes scroll {
     0% { transform: translateX(0); }
@@ -81,3 +158,22 @@ video { width: 1280px; height: 720px; }
     opacity: 0;
 }
 .ObjectTap p,header p {opacity: 100%;}
+
+@media all and (min-width: 1930px){
+    #Logo {top: 30%; left: 25%; } 
+    #LogoText {font-size: 9em; top: 37%; left: 48%;} 
+    #LogoSubText { font-size: 1.5em; top: 65%;}
+    .ObjectTap { width: 100%; height: 69%; position: relative; top: 16.66%; } 
+    .Object {justify-content:grid; gap: 5%; } 
+    #Hsub { font-size: 2em; position: absolute; top: 50%; font-weight: 700;}  
+    #warming {font-size: 5em; line-height: 2.25em;} 
+    .warmingsub {font-size: 1.75em; } 
+    .Video { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; padding-bottom: 10%; } 
+    video { width: 73%; height: 97.2%; } 
+    .Review { width: 100%; height: 100%; display: flex; justify-content: center; align-items: flex-start; position: relative; color: white;} 
+    .Review h3{  position: absolute;}
+    #description{position: relative; height: 118%; color: white;}
+    #description h3{width: 100%; height: 13.8%; text-align: center; font-size: 3em;}
+    #imgblur2{width: 100%;height: 82%; background-color:rgba(0, 0, 0, 0.6);position: absolute; z-index: 1;}
+    #Screen img{width: 66.66%;position: absolute; left: 16.66%}
+}

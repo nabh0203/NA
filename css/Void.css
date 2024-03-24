@@ -1,4 +1,4 @@
-p { color: white; } 
+/* p { color: white; } 
 .Thumbnail {width: 1920px; height: 1080px; position: relative; } 
 .Thumbnail video{width: 1920px; height: 1080px; position: absolute; }
 .TextBox { width: 1920px; height: 1080px; position: absolute; background-color: rgba(0, 0, 0, 0.75);} 
@@ -44,7 +44,7 @@ video { width: 1280px; height: 720px; }
 .Review { width: 1920px; height: 1080px; display: flex; justify-content: center; align-items: flex-start; position: relative; color: white;} 
 .Review h3{  position: absolute; }
 
-#PlayScreen {width: 1080px; height: 720px; border-radius: 120px; border: 40px solid #FFF; position: absolute; overflow: hidden; top: 150px;} 
+#PlayScreen {width: 1080px; height: 720px; border-radius: 120px; border: 5px solid #FFF; position: absolute; overflow: hidden; top: 150px;} 
 #Slider { display: flex; transition: transform 0.5s ease-in-out; }
 #PlayScreen img { width: 1080px; }
 .Buttons { width: 1620px; height: 850px; display: flex; justify-content: space-between; }
@@ -54,6 +54,91 @@ video { width: 1280px; height: 720px; }
 
 .Gallery{width: 1920px; height: 500px; position: relative; display: flex; justify-content: center;}
 .GalleryBox{width: 1920px; overflow: hidden; white-space: nowrap; position: relative;}
+.Gimg{width: 700px; height: 395px; float: left;}
+.ImageContainer{width: calc(700px * 12); animation: scroll 24s linear infinite;}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-700px * 6)); }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slide-up {
+    animation: slide-up 2s forwards;
+}
+
+
+#Logo, p{
+    opacity: 0;
+}
+.ObjectTap p,header p {opacity: 100%;} */
+
+
+p { color: white; } 
+.Thumbnail {width: 100%; height: 100vh; position: relative; } 
+.Thumbnail video{width: 100%; height: 100vh; position: absolute; }
+.TextBox { width: 100%; height: 100vh; position: absolute; background-color: rgba(0, 0, 0, 0.75);} 
+#Logo { position: absolute; top: 16.6%; left: 22%; } 
+#LogoText {width: 36.45%; font-size: 7.5em; font-weight: 700; position: absolute; top: 30%; left: 47%; } 
+#LogoSubText { width: 38.5%; height: 25.92%; text-align: center; font-size: 1.2em; position: absolute; top: 69.44%; left:30%; line-height: 1.25em;} 
+#Void{width: 6.77%; top: 45%; left:67.4%;font-size: 2.5em;position: absolute; }
+#bold { font-weight: 700;font-size: 3em; } 
+
+.ObjectTap { width: 100%; height: 69%; position: relative; top: 16.66%;} 
+.Object { display: flex; justify-content: center; } 
+.Object img { width: 90.45%; height: 100%; padding: 0 0.7% 0 0.7%; } 
+
+.Object > div { position: relative; display: inline-block; } 
+.Object > div .hoverBox { position: absolute; top: 0; left: 0; width: 90.45%; height: 100%; background: rgba(0,0,0,0.5); color: white; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.5s; padding: 0 0.7% 0 0.7%;} 
+.Object > div:hover .hoverBox { opacity: 1; } 
+.Object > div:hover img { filter: blur(3px); } 
+img { transition: filter 0.5s; } 
+
+#Objecttext {  width: 90.45%; height: 100%; font-weight: 700; z-index: 3; display:flex; justify-content: center; align-items: center; position: absolute; color: black;} 
+
+#Objecttext:hover { opacity: 0; } 
+#Hsub { font-size: 1em; position: absolute; top: 65%; font-weight: 700;} 
+#Hsub2 { font-size: 0.75em; width: 67.5%; height: 1.75%;position: absolute; top: 75%; text-align: center; line-height: 1.25em;} 
+#Hsub3 { font-size: 1em; position: absolute; top: 65%; font-weight: 700;} 
+#Hsub4 { font-size: 0.75em; width: 67.5%; height: 1.75%; position: absolute; top: 75%; text-align: center;line-height: 1.25em; } 
+
+#HImg { width: 25.45%; height: 36.45%; filter:blur(0); position: absolute; top: 25%; } 
+#HImg1 { width: 25.45%; height: 36.45%; filter:blur(0); position: absolute; top: 25%;} 
+#HImg2 { width: 25.45%; height: 36.45%; filter:blur(0); position: absolute; top: 25%;} 
+
+.warming { position: relative; width: 100%; height: 100vh; background-image: url(../Img/PBL/Sea.png); background-size: cover; } 
+#imgblur{width: 100%; height: 100vh; background-color:rgba(0, 0, 0, 0.8);position: absolute;}
+#warming { width: 100%; height: 23.1%;  font-size: 3em; line-height: 2.25em; display: flex; justify-content: center;position: absolute; font-weight: 700; top: 26%;} 
+.warmingsub {width: 100%; font-size: 1.25em; text-align: center; top: 37%;padding-top: 4.5%;position: absolute; line-height: 2.25em; font-weight: 400;} 
+.warmingsub p {padding-top: 2.5%;}
+#red{color: red;}
+
+
+.Video { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; padding-bottom: 10%; } 
+video { width: 73%; height: 97.2%; } 
+
+.Review { width: 100%; height: 100%; display: flex; justify-content: center; align-items: flex-start; position: relative; color: white;} 
+.Review h3{  position: absolute; }
+
+#PlayScreen {width: 56.25%; height: 66.66%; border-radius: 120px; border: 5px solid #FFF; position: absolute; overflow: hidden; top: 20%;} 
+#Slider { display: flex; transition: transform 0.5s ease-in-out; }
+#PlayScreen img { width: 1080px; }
+.Buttons { width: 83.47%; height: 78.7%; display: flex; justify-content: space-between; }
+#LeftButton{position: absolute; left: 7.8125%; top: 49.5%; display: none;}
+#RightButton{position: absolute; right: 7.8125%; top: 49.5%;}
+#LeftButton, #RightButton { background-color: #ffffff00; border: none; cursor: pointer; } 
+
+.Gallery{width: 100%; height: 55%; position: relative; display: flex; justify-content: center;}
+.GalleryBox{width: 100%; overflow: hidden; white-space: nowrap; position: relative;}
 .Gimg{width: 700px; height: 395px; float: left;}
 .ImageContainer{width: calc(700px * 12); /* 이미지의 너비 * 이미지의 총 개수 */ animation: scroll 24s linear infinite; /* 24s = 2s * 이미지의 총 개수 */}
 
@@ -81,3 +166,21 @@ video { width: 1280px; height: 720px; }
     opacity: 0;
 }
 .ObjectTap p,header p {opacity: 100%;}
+
+
+@media all and (min-width: 1930px){
+    #Logo { position: absolute; top: 25%; left: 28% } 
+    #LogoText {font-size: 9em; top: 33%; left: 48%; } 
+    #LogoSubText {font-size: 1.75em; line-height: 1.75em;} 
+    #Void{width: 6.77%;top: 46%; left:67.5%; }
+
+    .Object {justify-content:grid; gap: 5%; } 
+    .Object img { width: 110%;} 
+    .Object > div .hoverBox { width: 110%} 
+
+    #warming {font-size: 4em; line-height: 2.25em;} 
+    .warmingsub {font-size: 2em; } 
+    #PlayScreen {width: 42.18%; height: 50%; top: 20%; } 
+    #LeftButton{top: 40%;}
+    #RightButton{ top: 40%;}
+}

@@ -32,7 +32,7 @@ $(document).ready(function(){
         var scrollTop = $(window).scrollTop();
         var windowHeight = $(window).height();
     
-        $('p, #Logo,h3').not('.ObjectTap *,footer *').each(function () { // '.ObjectTap' 클래스를 가진 요소 안에 있는 요소를 제외합니다
+        $('p, #Logo,h3').not('.ObjectTap *,footer *, header *').each(function () { // '.ObjectTap' 클래스를 가진 요소 안에 있는 요소를 제외합니다
             var elementTop = $(this).offset().top - 100;
             var elementHeight = $(this).height();
     

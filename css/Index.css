@@ -1,123 +1,169 @@
 
 * { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } 
 /* PC */
-section { width: 1920px; height: 1080px; position:relative; overflow-y: hidden; overflow-x: hidden; } 
-#mainvideo{position: relative;}
-#blur{ position: absolute; width: 1920px; height: 200px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)); bottom: 0; }
-#bold{font-weight: 700;}
+section {width: 1920px; height: 1080px; position:relative; overflow-y: hidden; overflow-x: hidden; } 
+#mainvideo {width: 100%;height: 100%; position: relative; } 
+video{width: 100%;height: 100%;}
+#blur { position: absolute; width: 100%; height: 20%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)); bottom: 0; } 
+#bold { font-weight: 700; } 
 
-.page1 { display: flex; justify-content: center; overflow-y: hidden; } 
-.page1 img { position: absolute; top: 420px; } 
-.page1 p { font-size: 30px; color: white; } 
-.Left1 { width: 440px; height: 380px; text-align: right; padding: 0px 50px; line-height: 45px;} 
-.Right1 { width: 440px; height: 380px; text-align: left; padding: 0px 50px; line-height: 45px;} 
-.TextBox1 { display: flex; position: absolute; bottom: 0px;font-weight: 300; } 
-.page1 { display: flex; justify-content: center; overflow-y: hidden; } 
+@keyframes moveUpDown { 0%, 100% { bottom: 10%; } 50% { bottom: 25%; } 
+ } 
+#blur img { width: 7%; position: absolute; left:47%;  transition: transform 0.5s ease-in-out; animation: moveUpDown 2s ease-in-out infinite; } 
 
-.page2 {height: 1500px; display: flex; justify-content: center; overflow-y: hidden; position: relative;} 
+.page1 {width: 100%; display: flex; justify-content: center; overflow-y: hidden; } 
+.page1 img { position: absolute; top: 35%;} 
+.page1 p { font-size: 1.5em; color: white; } 
+.Left1 { width: 50%; height: 380px; text-align: right; padding: 0 50px; line-height: 45px; } 
+.Right1 { width: 50%; height: 380px; text-align: left; padding: 0 50px; line-height: 45px; } 
+.TextBox1 {width: 100%; display: flex; position: absolute; bottom: 0; font-weight: 300; } 
+
+.page2 {width: 100%;height: 1500px; display: flex; justify-content: center; overflow-y: hidden; position: relative; } 
 .page2 p { color: white; } 
-
-.Left2 { width: 460px; height: 380px; padding: 0px 50px; display: flex; justify-content: flex-end; align-items: center; font-size: 60px;color: white; } 
-.Right2 { width: 460px; height: 420px; display: flex; justify-content: flex-start; align-items: center; padding: 0px 50px; font-size: 30px;} 
-#study{font-size: 20px; position: absolute; bottom:100px;}
-#study2{font-size: 20px; position: absolute; padding-top: 130px;}
-.TextBox2 { display: flex; position: absolute; top: 40px; } 
-
-.Left3 { width: 440px; height: 380px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; font-size: 60px;} 
-.Right3 { width: 440px; height: 380px; display: flex; justify-content: flex-start; align-items: center; padding: 50px;font-size: 20px;} 
-.TextBox3 { display: flex; position: absolute; top: 340px; } 
+.Left2 { width: 50%; height: 380px; padding: 0 50px; display: flex; justify-content: flex-end; align-items: center; font-size: 3em; color: white; } 
+.Right2 { width: 50%; height: 420px; display: flex; justify-content: flex-start; align-items: center; padding: 0 50px; font-size: 1.3em; } 
+#study { font-size: 0.7em; position: absolute; bottom:100px; } 
+#study2 { font-size: 0.7em; position: absolute; padding-top: 130px; } 
+.TextBox2 {width: 100%; display: flex; position: absolute; top: 40px; } 
 
 
-.Left4 { width: 440px; height: 380px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; font-size: 30px;} 
-.Right4 { width: 450px; height: 380px; display: flex; justify-content: flex-start; align-items: center; padding: 25px 50px;font-size: 25px; } 
-.TextBox4 { display: flex; position: absolute; top: 600px; } 
-
-#bold1{font-weight: 700; position: absolute; left: 220px; color: white; font-size: 40px;}
-.stackpage{width: 1920px; height: 1680px; position: relative;}
-.STack{height: 540px;display: flex; position: absolute; left: 220px;font-size: 40px;color: white;}
-.STackLeft{width: 700px; height: 480px; font-size: 40px; line-height: 45px;position: relative;padding-top: 100px;}
-.stackOne{display: flex; padding-top: 100px;}
-.stackOne img{width: 300px; height: 172px;}
-.stacktext{ padding-left: 50px;width: 400px;padding-top: 20px;  font-size: 18px; line-height: 45px;}
-
-.STackLeft-2 { width: 700px; height: 480px; font-size: 20px; line-height: 45px; position: absolute; left:220px ; top: 885px;} 
-.stackTwo{display: flex;}
-.stackTwo img{width: 280px;}
-.stacktext_2{ padding-left: 50px; padding-top: 50px;width: 500px; font-size: 18px; line-height: 45px;}
-/* #sub{font-size: 15px;} */
-#list{font-size: 15px; line-height: 45px; padding-top: 40px;}
-
-.STackRight { width:630px; height: 540px; font-size: 40px; line-height: 45px; position: absolute; right: 280px; bottom: 985px;} 
-
-.mainimg{width:630px; height: 380px;}
-#lineimg{margin-top: 50px; display: flex;}
-#lineimg img{width: 150px;padding: 5px; cursor: pointer;}
-
-.STackRight-2 { width:630px; height: 540px; font-size: 40px; line-height: 45px; position: absolute; right: 280px; bottom: 325px;} 
-
-.mainimg-2{width:630px; height: 380px;}
-#lineimg-2{margin-top: 50px; display: flex; }
-#lineimg-2 img{width: 150px;padding: 5px; cursor: pointer;}
+.Left3 {width: 50%; height: 380px; padding: 0 50px; display: flex; justify-content: flex-end; align-items: center; font-size: 3em; } 
+.Right3 { width: 50%; height: 380px; display: flex; justify-content: flex-start; align-items: center; padding: 0 50px; font-size: 1em; } 
+.TextBox3 {width: 100%; display: flex; position: absolute; top: 340px; } 
 
 
+.Left4 { width: 50%; height: 380px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; font-size: 1.5em; } 
+.Right4 { width: 50%; height: 380px; display: flex; justify-content: flex-start; align-items: center; padding: 25px 50px; font-size: 1.2em; } 
+.TextBox4 {width: 100%; display: flex; position: absolute; top: 600px; } 
+
+.stackpage {width: 100%; height: 1680px; position: relative; } 
+
+#bold1 {font-weight: 700; position: absolute; color: white; font-size: 2em; left: 10.4%;} 
+
+.STack {width: 100%; height: auto; color: white;padding-left: 10.4%;padding-top: 1%;} 
+
+.STackLeft {width: 36%; height: auto; line-height: 45px; position: relative; } 
+.stackOne {width: 100%; display: flex; padding-top: 100px; } 
+.stackOne img { width: 100%; height: auto; } 
+.stacktext { padding-left: 50px; width: 100%; padding-top: 20px; font-size: 1em; line-height: 2.3em; } 
+
+#list {font-size: 0.75em; line-height: 45px; padding-top: 40px; } 
+
+.STackRight { width:45%;height: 540px; font-size: 40px; line-height: 45px; position: absolute;  top: 5%; right: 2%; } 
+.mainimg { width:80%; height: auto; } 
+.mainimg img{width: 100%;}
+#lineimg { width:95%;display: flex; } 
+#lineimg img { width: 20%; padding: 5px; cursor: pointer; } 
+
+
+.STackLeft-2 { width: 100%; height: auto; font-size: 20px; line-height: 2em; position: absolute; top: 885px;padding-left: 10.4%; padding-top: 5%;} 
+.stackTwo { width: 36%;display: flex; } 
+.stackTwo img { width: 80%;height: auto;} 
+.stacktext_2 { padding-left: 60px; padding-top: 50px; width: 100%; font-size: 1em; line-height: 45px; } 
+
+.STackRight-2 { width:45%;height: 540px;  font-size: 40px; line-height: 45px; position: absolute; right: 3%; bottom: 15%; } 
+.mainimg-2 { width:80%; height: auto; } 
+.mainimg-2 img{width: 100%;}
+#lineimg-2 { width:95%; display: flex;} 
+#lineimg-2 img { width: 20%; padding: 5px; cursor: pointer; } 
+
+/* height : 1500 */
+.ImgBox1 {width: 40%; height: 10%; position: absolute;left: 33%; bottom: 17%; } 
+.ImgBox1 img { display: inline-block; padding:0.5% 1% 0.5% 1%  ; filter: grayscale(100%); transition: 0.5s; justify-content: center; cursor: pointer; } 
+.ImgBox1 img:hover { transition: 0.5s; filter: grayscale(0); } 
+
+
+.page3 {width: 100%; height: 1600px; display: flex; justify-content: center; overflow-y: hidden; color: white; } 
+.page3 p { font-size: 1em; color: white; } 
+
+.Slogun { font-size: 5em; font-weight: 700; } 
+#SlogunSub { font-size: 2em; font-weight: 300; position: absolute; bottom: 48%; } 
+.Left5 { width: 15%; height: 13.75%; padding: 2.6% 2.6% 0 2.6%; display: flex; justify-content: flex-end; align-items: center; } 
+.Right5 { width: 30%; height: 13.75%;; display: flex; justify-content: flex-start; align-items: center; padding: 4.5% 2.6% 0 2.6%; } 
+.TextBox5 {width: 100%;height: 21.875%; padding-left: 15.625%; display: flex; justify-content: center; position: absolute; top: 0; } 
+
+
+.Left6 {width: 15%; height: 13.75%; padding: 2.6% 2.6% 0 2.6%; display: flex; justify-content: flex-end; align-items: center;  } 
+.Right6 { width: 31.25%; height: 13.75%; display: flex; justify-content: flex-start; align-items: center; padding: 4.5% 2.6% 0 2.6%; } 
+.TextBox6 { width: 100%;height: 21.875%; padding-left: 15.625%; display: flex; justify-content: center; position: absolute; top: 20%; } 
+
+
+.Left7 { width: 15%; height: 13.75%; padding: 2.6% 2.6% 0 2.6%; display: flex; justify-content: flex-end; align-items: center; } 
+.Right7 { width: 31.25%; height: 13.75%; display: flex; justify-content: flex-start; align-items: center; padding: 4.5% 2.6% 0 2.6%;  } 
+.TextBox7 {  width: 100%;height: 21.875%; padding-left: 15.625%; display: flex; justify-content: center; position: absolute; top: 40%; } 
+
+
+.Left8 { width: 15%; height: 13.75%; padding: 2.6% 2.6% 0 2.6%; display: flex; justify-content: flex-end; align-items: center; } 
+.Right8 { width: 31.25%; height: 13.75%; display: flex; justify-content: flex-start; align-items: center; padding: 4.5% 2.6% 0 2.6%;  } 
+.TextBox8 {  width: 100%;height: 21.875%; padding-left: 15.625%; display: flex; justify-content: center; position: absolute; top: 60%; } 
+
+
+.Left9 { width: 15%; height: 13.75%; padding: 2.6% 2.6% 0 2.6%; display: flex; justify-content: flex-end; align-items: center; } 
+.Right9 { width: 31.25%; height: 13.75%; display: flex; justify-content: flex-start; align-items: center; padding: 4.5% 2.6% 0 2.6%;  } 
+.TextBox9 {  width: 100%;height: 21.875%; padding-left: 15.625%; display: flex; justify-content: center; position: absolute; top: 80%; } 
+
+
+@keyframes slide-up { 
+ 0% { transform: translateY(100px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } 
+ } 
+.slide-up { animation: slide-up 2s forwards; } 
+.TextBox1, .TextBox2, .TextBox3, .TextBox4, .TextBox5, .TextBox6, .TextBox7, .TextBox8, .TextBox9 { opacity: 0; } 
 
 
 
-.ImgBox1 { position: absolute; bottom: 260px;  } 
-.ImgBox1 img {display: inline-block;  padding: 10px; width: 90px; height: 100px; filter: grayscale(100%);transition: 0.5s; justify-content: center;cursor: pointer;} 
-.ImgBox1 img:hover { transition: 0.5s; filter: grayscale(0);} 
+
+@media all and (min-width: 1930px){
+    #blur img { width: 10%;left:44%;} 
+
+    .page1 img {width: 15%;} 
+    .page1 p { font-size: 1.7em;} 
+    .Left1 {line-height: 1.5em; } 
+    .Right1 {line-height: 1.5em;} 
+    .page2 p { color: white; } 
+    .Left2 {font-size: 4em; color: white; } 
+    .Right2 {font-size: 1.5em; } 
+    #study { font-size: 0.9em; position: absolute; bottom:100px; } 
+    #study2 { font-size: 0.9em; position: absolute; padding-top: 130px; } 
+    .Left3 {font-size: 4em; } 
+    .Right3 {font-size: 1.3em; } 
+    .Left4 {font-size: 2.25em; } 
+    .Right4 {font-size: 1.5em; } 
+    #bold1 {font-size: 3em; left: 12.5%;} 
+    .STack {width: 100%; height: auto; color: white;padding-left: 10.4%;padding-top: 1%;} 
+
+    .STackLeft {line-height: 1em; left: 2%;} 
+    .stackOne {padding-top: 15%; } 
+    .stackOne img{width: 100%;}
+    .stacktext { padding-left: 10%; font-size: 1.3em; line-height: 2.3em; } 
+    #list {font-size: 1.1em; line-height: 2.2em;} 
+    
 
 
-
-.page3 { height: 1600px; display: flex; justify-content: center; overflow-y: hidden; color: white; } 
-.page3 p { font-size: 20px; color: white; } 
-
-
-
-.Left5 { width: 295px; height: 220px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; } 
-.Slogun { font-size: 100px; font-weight: 700; } 
-#SlogunSub { font-size: 40px; font-weight: 300; position: absolute; bottom: 75px; } 
-.Right5 { width: 580px; height: 250px; display: flex; justify-content: flex-start; align-items: center; padding: 50px; } 
-.TextBox5 { margin-left: 300px; display: flex; justify-content: center; position: absolute; top: 0px;} 
+    /* 여기서부터 다시 진행 */
+    .STackRight {width: 40%; position: absolute;  top: 5%; right: 7.5%; } 
+    .mainimg { width:83.5%;} 
+    .mainimg img{width: 100%;}
+    #lineimg { width:100%;} 
+    #lineimg img { width: 20%;} 
 
 
-.Left6 { width: 295px; height: 220px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; } 
-.Right6 {width: 600px; height: 250px; display: flex; justify-content: flex-start; align-items: center; padding: 50px; } 
-.TextBox6 {margin-left: 320px;display: flex; justify-content: center; position: absolute; top: 300px; } 
+    .STackLeft-2 { line-height: 1em; left: 2%;} 
+    .stackTwo img { width: 100%;} 
+    .stacktext_2 { padding-left: 10%; font-size: 1.3em; line-height: 2.3em; } 
+
+    .STackRight-2 { width: 40%;height: 540px;  font-size: 40px; line-height: 45px; position: absolute;  right: 7.5%;  bottom: 13%; } 
+    .mainimg-2 { width:83.5%;} 
+    .mainimg-2 img{width: 100%;}
+    #lineimg-2 { width: 100%;} 
+    #lineimg-2 img {  width: 20%;} 
+
+    /* height : 1500 */
+    .ImgBox1 {left: 33%;} 
+    .ImgBox1 img { width: 12%; } 
+    .ImgBox1 img:hover { transition: 0.5s; filter: grayscale(0); } 
 
 
-.Left7 { width: 295px; height: 220px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; } 
-.Right7 {width: 600px; height: 250px; display: flex; justify-content: flex-start; align-items: center; padding: 50px; } 
-.TextBox7 {margin-left: 320px;display: flex; justify-content: center; position: absolute; top: 600px; } 
-
-.Left8 { width: 295px; height: 220px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; } 
-.Right8 {width: 610px; height: 250px; display: flex; justify-content: flex-start; align-items: center; padding: 50px; } 
-.TextBox8 {margin-left: 330px;display: flex; justify-content: center; position: absolute; top:900px; } 
-
-.Left9 { width: 295px; height: 220px; padding: 50px; display: flex; justify-content: flex-end; align-items: center; } 
-
-.Right9 { width: 580px; height: 250px; display: flex; justify-content: flex-start; align-items: center; padding: 50px; } 
-
-.TextBox9 {margin-left: 330px;display: flex; justify-content: center; position: absolute; top: 1200px; } 
-
-
-
-@keyframes slide-up {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    .page3 p { font-size: 1.2em;}
+    .Slogun { font-size: 6em;} 
+    #SlogunSub { font-size: 1.8em;bottom: 36%; } 
 }
-.slide-up {
-    animation: slide-up 2s forwards;
-}
-
-
-.TextBox1, .TextBox2, .TextBox3, .TextBox4, .TextBox5, .TextBox6, .TextBox7, .TextBox8, .TextBox9 {
-    opacity: 0;
-}
-

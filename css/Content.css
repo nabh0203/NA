@@ -1,12 +1,34 @@
-body { overflow-x: hidden; } 
+/* body { overflow-x: hidden; } 
 .Thumbnail { width: 1920px; height: 710px; display: flex; justify-content: center; align-items: flex-end; } 
-.Thumbnail img { width: 920px; height: 470px; } 
-.Frame { width: 920px; height: 450px; border-radius: 110px; border: 10px solid #FFF;  position: relative; display: flex; overflow: hidden;} 
+.Frame { width: 920px; height: 450px; border-radius: 110px; border: 5px solid #FFF;  position: relative; display: flex; overflow: hidden;} 
 .Frame img { width: 920px; height: 470px; flex-shrink: 0; transition: transform 0.5s ease-in-out; } 
 .Frame .ImageContainer { position: relative; display: flex; } 
 .Frame .ImageContainer img { flex-shrink: 0; } 
-.TextBox {width: 1920px;height: 220px; position: relative;} 
-.Main{width: 1920px;height: 220px;align-items: center; display: flex; justify-content: center; font-size: 80px; font-weight: 700; z-index: 2; position: absolute;} 
+.TextBox {width: 1920px;height: 262px; position: relative;} 
+.Main{width: 1920px;height: 262px;align-items: center; display: flex; justify-content: center; font-size: 80px; font-weight: 700; z-index: 2; position: absolute;} 
 .Buttons { width: 1330px; height: 75px; display: flex; justify-content: space-between; position: absolute; top: 440px; left: 295px; } 
 #LeftButton { background-color: #ffffff00; border: none; z-index: 3; cursor: pointer;} 
 #RightButton { background-color: #ffffff00; border: none; z-index: 3; cursor: pointer;} 
+.alink{width: 920px;height: 470px;} */
+
+body {height: 100vh; overflow-x: hidden; } 
+.Thumbnail { width: 100%; height: 66vh; display: flex; justify-content: center; align-items: flex-end; }  
+.Frame { width: 48%; height: 42vh; border-radius: 110px; border: 5px solid #FFF;  position: relative; display: flex; overflow: hidden;} 
+.Frame img { width: 920px; height: 470px;flex-shrink: 0; transition: transform 0.5s ease-in-out; } 
+.Frame .ImageContainer { position: relative; display: flex; } 
+.Frame .ImageContainer img { flex-shrink: 0; } 
+.TextBox {width: 100%;height: 24.6vh; position: relative;} 
+.Main{width: 100%;height: 24vh;align-items: center; display: flex; justify-content: center; font-size: 4em; font-weight: 700; z-index: 2;} 
+.Buttons { width: 69.2%; height: 3.9%; display: flex; justify-content: space-between; position: absolute; top: 40.7%; left: 15.36%; } 
+#LeftButton { background-color: #ffffff00; border: none; z-index: 3; cursor: pointer;} 
+#RightButton { background-color: #ffffff00; border: none; z-index: 3; cursor: pointer;} 
+.alink{width: 920px;height: 470px;}
+
+@media all and (min-width: 1930px){
+    .Thumbnail { width: 100%; height: 66vh;}  
+    .Frame { width: 36%; height: 31.2vh;} 
+    .TextBox {width: 100%;height: 24.6vh; position: relative;} 
+    .Main{font-size: 5em;} 
+    .Buttons {top: 45%;}
+    .alink{width: 920px;height: 470px;}    
+}
